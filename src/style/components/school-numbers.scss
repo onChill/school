@@ -1,0 +1,40 @@
+.section-numbers {
+    padding: 25px 0;
+    display: block;
+    background-color: #fff;
+
+    &__item {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-align: center;
+        padding-right: 15px;
+        padding-left: 15px;
+        max-width: 1199px {
+            padding-top: 20px;
+            padding-bottom: 0;
+        }
+    }
+    &__item {
+        @include media-breakpoint-down(md) {
+            padding-top: 0;
+            padding-bottom: 20px;
+        }
+    }
+    &__number {
+        margin-bottom: 25px;
+        font-size: 5.71428571rem;
+        line-height: 1;
+        @include media-breakpoint-down(lg) {
+            font-size: 3.1rem;
+            margin-bottom: 5px;
+        }
+    }
+    &__desc {
+        font-size: 1.14285714rem;
+        line-height: 1.5;
+        color: #4a4a4a;
+        @include media-breakpoint-down(sm) {
+            font-size: 0.942857rem;
+        }
+    }
+}

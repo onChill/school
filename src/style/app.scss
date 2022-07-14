@@ -1,0 +1,33 @@
+//Helpers
+@import "./helpers/functions";
+
+@import "./fonts";
+@import "variable";
+@import "~bootstrap/scss/bootstrap";
+@import '~swiper/css/bundle';
+//@import '~@fortawesome/fontawesome-free/css/all.min.css';
+@import "global";
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css");
+@import "./components/main-slider"; 
+@import "./components/main-slider";
+@import "./components/main-news.scss";
+@import "./components/main-useful-links.scss";
+@import "./components/school-numbers.scss";
+
+
+//Components
+@import "components/header";
+@import "components/footer";
+
+//Pages
+@import "pages/index";
+
+
+
+
+
+
+
+
+
+

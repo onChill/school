@@ -1,0 +1,53 @@
+.section-uselinks {
+  padding-top: 35px;
+  padding-bottom: 35px;
+  display: block;
+  @include media-breakpoint-down(sm) {
+    padding-bottom: 0;
+  }
+}
+
+.useful-links {
+  &__list {
+    @include media-breakpoint-up(md) {
+      margin-bottom: 0;
+      list-style: none;
+      display: flex;
+    }
+    align-items: center;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
+  &__item {
+    display: block;
+    padding: 10px 0;
+    @include media-breakpoint-up(md) {
+      width: 20%;
+      padding: 10px 15px;
+      &:not(:last-child) {
+        border-right: 1px solid #cbcbcb;
+      }
+    }
+    @include media-breakpoint-down(md){
+      &:not(:last-child) {
+        border-bottom: 1px solid #cbcbcb;
+      }
+    }
+
+    &-link {
+      display: block;
+      font-size: 16px;
+      line-height: 1.5;
+      color: #000;
+      transition: color 0.25s;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+    }
+  }
+}
+
+
